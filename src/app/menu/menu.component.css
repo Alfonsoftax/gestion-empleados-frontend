@@ -1,0 +1,21 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .botones {
+    font-size: 40px;
+  }
+  .nav {
+    background-color: white;
+  }
+  .basic {
+    color: black;
+  }
+  
+  .logoPrincipal{
+    padding: 5px;
+    width: 120px;
+  }

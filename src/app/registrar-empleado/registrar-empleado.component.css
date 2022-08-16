@@ -1,0 +1,19 @@
+.title {
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: lighter;
+    line-height: 1;
+}
+label {
+    font-size:20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+input {
+    height: 60px;
+}
+
+button {
+    margin-top: 50px;
+    width: 50%;
+}

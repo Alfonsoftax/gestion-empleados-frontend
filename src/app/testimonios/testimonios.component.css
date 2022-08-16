@@ -1,0 +1,28 @@
+.bloque2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.example-card {
+  background-color: white;
+  color: black;
+  max-width: 600px;
+  text-align: center;
+}
+
+
+.example-header-image {
+  background-image : url ( 'https://material.angular.io/assets/img/examples/shiba1.jpg' );
+}
+
+.miniatura {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  border-radius: 4px;
+}

@@ -1,0 +1,55 @@
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+.imagen-pc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+
+.img-setup {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.bloque {
+  height: 620px;
+  background-color: #3819e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-card {
+  background-color: #3819e9;
+  color: white;
+}
+
+.example-card2 {
+  background-color: white;
+  color: black;
+  max-width: 800px;
+  text-align: center;
+}
+
+.textoh1 {
+  color: white;
+  font-weight: bold;
+}
+
+.miniatura {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.subtitulocard {
+  padding-top: 25px;
+  font-size: 20px;
+}

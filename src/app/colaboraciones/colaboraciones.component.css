@@ -1,0 +1,60 @@
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contenedor{
+    height: 5%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloque {
+    height: 620px;
+    background-color: #3819e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bloque2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+.textoh1 {
+  color: white;
+  font-weight: bold;
+}
+
+.example-card2 {
+  background-color: white;
+  color: black;
+  text-align: center;
+  max-width: 800px;
+  border-radius: 15px;
+}
+.subtitulocard {
+  padding-top: 25px;
+  font-size: 20px;
+}
+.logo{
+  width: 30px;
+}
+
+.miniatura {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  width: 70px;
+}
+
