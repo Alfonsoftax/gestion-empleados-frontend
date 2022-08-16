@@ -21,6 +21,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { FooterComponent } from './footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { PlanesPagoComponent } from './planes-pago/planes-pago.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     FooterComponent,
     InicioComponent,
     ContactoComponent,
+    PlanesPagoComponent,
   ],
   imports: [
     BrowserModule,
