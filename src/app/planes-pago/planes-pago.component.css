@@ -1,0 +1,159 @@
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+.title2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.imagen-pc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+
+.img-setup {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+.bloque {
+  height: 620px;
+  background-color: #3819e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloque2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-card {
+  background-color: #3819e9;
+  color: white;
+}
+
+.example-card2 {
+  background-color: white;
+  color: black;
+  max-width: 800px;
+  text-align: center;
+}
+
+.textoh1 {
+  color: white;
+  font-weight: bold;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+mat-grid-tile {
+  border-radius: 20px;
+}
+
+mat-grid-list{
+  border-color: black;
+}
+
+
+.miniatura {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border-radius: 4px;
+}
+
+.subtitulocard {
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+
+.precio {
+  padding-top: 35px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.link {
+  color: #3819e9;
+  text-decoration:none;
+  transition: 0.3s;
+}
+
+.link:hover{
+  color: red;
+  opacity: 1;
+}
+
+.contenedor{
+margin-left: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.contenedor figure{
+position:relative;
+height: 250px;
+cursor: pointer;
+width: 350px;
+overflow: hidden;
+border-radius: 6px;
+box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.contenedor figure img{
+width: 100%;
+height: 100%;
+transition: all 400ms ease-out;
+will-change: transform;
+}
+.contenedor figure .capa{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,103,123,0.7);
+transition: all 400ms ease-out;
+opacity: 0;
+visibility: hidden;
+text-align: center;
+}
+.contenedor figure:hover > .capa {
+opacity: 1;
+visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+margin-top: 70px;
+margin-bottom: 15px;
+}
+.contenedor figure:hover > img{
+transform: scale(1.3);
+}
+.contenedor figure .capa h3{
+color: #fff;
+font-weight: 400;
+margin-bottom: 120px;
+transition: all 400ms ease-out;
+ margin-top: 30px;
+}
+.contenedor figure .capa p{
+color: #fff;
+font-size: 15px;
+line-height: 1.5;
+width: 100%;
+max-width: 220px;
+margin: auto;
+}
