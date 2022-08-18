@@ -1,8 +1,8 @@
 import  swal  from 'sweetalert2';
-import { EmpleadoService } from './../empleado.service';
+import { EmpleadoService } from '../services/empleados-s/empleado.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Empleado } from '../empleado';
+import { Empleado } from '../entitys/empleado';
 
 @Component({
   selector: 'app-empleado-detalles',

@@ -4,11 +4,11 @@ import { Empleado } from '../entitys/empleado';
 import { EmpleadoService } from '../services/empleados-s/empleado.service';
 
 @Component({
-  selector: 'app-registrar-empleado',
-  templateUrl: './registrar-empleado.component.html',
-  styleUrls: ['./registrar-empleado.component.css']
+  selector: 'app-proyecto-medida',
+  templateUrl: './proyecto-medida.component.html',
+  styleUrls: ['./proyecto-medida.component.css']
 })
-export class RegistrarEmpleadoComponent implements OnInit {
+export class ProyectoMedidaComponent implements OnInit {
 
   empleado: Empleado = new Empleado();
   constructor(private empleadoServicio:EmpleadoService, private router:Router) { }

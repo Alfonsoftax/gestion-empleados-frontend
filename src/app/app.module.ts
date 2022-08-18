@@ -22,6 +22,8 @@ import { FooterComponent } from './footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PlanesPagoComponent } from './planes-pago/planes-pago.component';
+import { ProyectoMedidaComponent } from './proyecto-medida/proyecto-medida.component';
+import { TrabajarJuntosComponent } from './trabajar-juntos/trabajar-juntos.component';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { PlanesPagoComponent } from './planes-pago/planes-pago.component';
     InicioComponent,
     ContactoComponent,
     PlanesPagoComponent,
+    ProyectoMedidaComponent,
+    TrabajarJuntosComponent,
   ],
   imports: [
     BrowserModule,

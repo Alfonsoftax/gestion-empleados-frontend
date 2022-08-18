@@ -2,20 +2,18 @@
 <hr>
 <div class="col-md-6 offset-md-3">
   <div>
-    <h1 class="text-center title">¿Tienes algún proyecto online en mente y no sabes cómo empezar?</h1>
-    <h1 class="text-center title">Contacta conmigo!!</h1>
-
+    <h1 class="text-center title">Thanks for taking the time to reach out. How can I help you today?</h1>
   </div>
 
   <br><br><br>
-    <form (ngSubmit)= "onSubmit()" #contactoForm = "ngForm">
+    <form (ngSubmit)= "onSubmit()" #empleadoForm = "ngForm">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <label> <b>Nombre :</b>  </label>
           <input type = "text"
           class="form-control"
           id = "nombre"
-          [(ngModel)] = "contacto.nombre"
+          [(ngModel)] = "empleado.nombre"
           name = "nombre"
           required
           minlength="4"
@@ -39,7 +37,7 @@
         <input type = "email"
         class="form-control"
         id = "email"
-        [(ngModel)] = "contacto.email"
+        [(ngModel)] = "empleado.email"
         name = "email"
         pattern ="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
         required
@@ -54,15 +52,39 @@
           </div>
         </div>
         </div>
-      </div>
+    </div>
       <br>
       <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <label> <b>Tipo de proyecto :</b>  </label>
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Selecciona el tipo de proyecto</option>
+            <option value="1">Portfolio</option>
+            <option value="2">Tienda online</option>
+            <option value="3">Gestión empresa</option>
+            <option value="4">Mantenimiento de aplicaciones</option>ç
+            <option value="5">Web Startup</option>
+            <option value="6">Nuevo producto</option>
+          </select>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <label> <b>Plataforma del proyecto : </b> </label>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Selecciona el tipo de proyecto</option>
+                <option value="1">Móvil app</option>
+                <option value="2">Web app</option>
+                <option value="3">Web responsive</option>
+                <option value="4">Todas</option>
+            </select>
+        </div>
+    </div>
+      <div class="row">
         <div class="col">
-          <label> <b>Mensaje :</b>  </label>
+          <label> <b>Explícanos brevemente en qué consiste el proyecto</b> </label>
           <textarea type = "text"
           class="form-control text-area"
           id = "mensaje"
-          [(ngModel)] = "contacto.mensaje"
+          [(ngModel)] = "empleado.mensaje"
           name = "mensaje"
           required
           minlength="20"
@@ -84,7 +106,7 @@
       </div>
 
       <div class="col-sm-12 d-flex justify-content-center">
-        <button class="btn btn-success" [disabled]= "!contactoForm.form.valid">Enviar</button>
+        <button class="btn btn-success" [disabled]= "!empleadoForm.form.valid">Enviar</button>
       </div>
       <br><br><br><br><br><br>
     </form>

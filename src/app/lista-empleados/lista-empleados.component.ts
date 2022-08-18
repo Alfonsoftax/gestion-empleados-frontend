@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Empleado } from '../empleado';
-import { EmpleadoService } from '../empleado.service';
+import { Empleado } from '../entitys/empleado';
+import { EmpleadoService } from '../services/empleados-s/empleado.service';
 import swal from 'sweetalert2';
 
 @Component({

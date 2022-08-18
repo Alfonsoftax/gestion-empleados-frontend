@@ -3,3 +3,30 @@
 html, body { height: 100%; }
 body {font-family: Roboto, "Helvetica Neue", sans-serif;    overflow-x: hidden;
 }
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3819e9;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #3819e9;
+  }
+
+  body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #3819e9;    /* color of the scroll thumb */
+  }

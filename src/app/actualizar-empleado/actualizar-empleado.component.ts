@@ -1,6 +1,6 @@
 import  swal  from 'sweetalert2';
-import { EmpleadoService } from './../empleado.service';
-import { Empleado } from './../empleado';
+import { EmpleadoService } from '../services/empleados-s/empleado.service';
+import { Empleado } from '../entitys/empleado';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
