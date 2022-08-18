@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Empleado } from '../entitys/empleado';
-import { EmpleadoService } from '../services/empleados-s/empleado.service';
+import { TrabajarJuntos } from '../entitys/trabajarJuntos';
+import { TrabajarJuntosService } from '../services/trabajarJuntos-s/trabajar-juntos.service';
+import  swal  from 'sweetalert2';
+
 @Component({
   selector: 'app-trabajar-juntos',
   templateUrl: './trabajar-juntos.component.html',
@@ -9,25 +11,33 @@ import { EmpleadoService } from '../services/empleados-s/empleado.service';
 })
 export class TrabajarJuntosComponent implements OnInit {
 
-  empleado: Empleado = new Empleado();
-  constructor(private empleadoServicio:EmpleadoService, private router:Router) { }
+  trabajoJunto: TrabajarJuntos = new TrabajarJuntos();
+  constructor(private trabajoJuntoServicio:TrabajarJuntosService, private router:Router) { }
 
   ngOnInit(): void {
   }
 
-  guardarEmpleado(){
-    this.empleadoServicio.registrarEmpleado(this.empleado).subscribe(dato =>{
+  guardarTrabajoJunto(){
+    console.log(this.trabajoJunto.presupuesto)
+    this.trabajoJuntoServicio.registrarTrabajoJunto(this.trabajoJunto).subscribe(dato =>{
       console.log(dato);
-      this.volverListaEmpleados();
+      this.mostrarMensajeExito();
     }, error =>console.log(error))
   }
 
-  volverListaEmpleados(){
+  mostrarMensajeExito(){
     this.router.navigate(['/inicio']);
+    swal('Mensaje enviado',`Muchas gracias por su confianza <b>${this.trabajoJunto.nombre}</b> nos pondremos en contacto lo antes posible.`,`success`);
+    this.scrollTop();
+  }
+
+  scrollTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
   }
 
   onSubmit(){
-    this.guardarEmpleado();
+    this.guardarTrabajoJunto();
   }
 
 }

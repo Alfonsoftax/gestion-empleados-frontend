@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Empleado } from '../entitys/empleado';
-import { EmpleadoService } from '../services/empleados-s/empleado.service';
+import { ProyectoMedida } from '../entitys/proyectoMedida';
+import { ProyectoMedidaService } from '../services/proyectoMedida-s/proyecto-medida.service';
+import  swal  from 'sweetalert2';
 
 @Component({
   selector: 'app-proyecto-medida',
@@ -10,25 +11,32 @@ import { EmpleadoService } from '../services/empleados-s/empleado.service';
 })
 export class ProyectoMedidaComponent implements OnInit {
 
-  empleado: Empleado = new Empleado();
-  constructor(private empleadoServicio:EmpleadoService, private router:Router) { }
+  proyectoMedida: ProyectoMedida = new ProyectoMedida();
+  constructor(private proyectoMedidaServicio:ProyectoMedidaService, private router:Router) { }
 
   ngOnInit(): void {
   }
 
-  guardarEmpleado(){
-    this.empleadoServicio.registrarEmpleado(this.empleado).subscribe(dato =>{
+  guardarProyectoMedida(){
+    this.proyectoMedidaServicio.registrarProyectoMedida(this.proyectoMedida).subscribe(dato =>{
       console.log(dato);
-      this.volverListaEmpleados();
+      this.mostrarMensajeExito();
     }, error =>console.log(error))
   }
 
-  volverListaEmpleados(){
+  mostrarMensajeExito(){
     this.router.navigate(['/inicio']);
+    swal('Mensaje enviado',`Muchas gracias por su confianza <b>${this.proyectoMedida.nombre}</b> nos pondremos en contacto lo antes posible.`,`success`);
+    this.scrollTop();
+  }
+
+  scrollTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
   }
 
   onSubmit(){
-    this.guardarEmpleado();
+    this.guardarProyectoMedida();
   }
 
 }
