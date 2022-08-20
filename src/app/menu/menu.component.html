@@ -1,4 +1,4 @@
-<mat-toolbar class="nav container" style="margin-left: auto; margin-right: auto;">
+<!-- <mat-toolbar class="nav container" style="margin-left: auto; margin-right: auto;">
     <mat-toolbar-row>
       <a routerLink="inicio"><img mat-card-image src="../../assets/imagenes/logo.png" class="logoPrincipal"  alt="Logo principal"></a>
       <span class="example-spacer"></span>
@@ -13,6 +13,61 @@
         </a>
       </div>
     </mat-toolbar-row>
-  </mat-toolbar>
+  </mat-toolbar> -->
+<nav class="navbar navbar-expand-md ">
+        <div class="container-fluid">
+        <!-- icono o nombre -->
 
-  
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-flower1"></i>
+          <span class="text-warning">SoftAX</span>
+        </a>
+            
+        <!-- boton del menu -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- elementos del menu colapsable -->
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="contacto" routerLinkActive="active" href="#" style="font-size: 30px; ">Contacta con nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="planes-pago" routerLinkActive="active" style="font-size: 30px; ">Planes</a>
+            </li>
+
+          </ul>
+
+          <hr class="d-md-none text-white-50">
+
+
+
+          
+         <!--boton Informacion -->
+
+
+          
+          
+        </div>
+     
+        </div>  
+      </nav>
+  <!-- <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Collapsed content</h5>
+        <span class="text-muted">Toggleable via the navbar brand.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> 
+          <li>a</li>
+        </span>
+      </button>
+    </nav>
+  </div> -->
