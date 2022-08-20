@@ -1,5 +1,5 @@
 .bloque {
-    height: 640px;
+    height: 680px;
     background-color: #3819e9;
     display: flex;
     justify-content: center;
@@ -36,8 +36,34 @@
     margin-top: -730px;
     
   }
+
+  @media (max-width: 604px) {
+    .barra {
+      width: 50%;
+      height: auto;
+    }
+
+    
+
+    .logo-mq {
+      margin-top: 25%;
+    }
+    .mq{
+      margin-bottom: 15px;
+    }
+    .img-icon{
+      width: 120%;
+    }
+
+
+  }
+
   .title {
     font-size: 30px;
     font-weight: bold;
     color: white;
+}
+
+.logotipo-rss {
+  width: 50%; margin-left: auto; margin-right: auto;
 }
