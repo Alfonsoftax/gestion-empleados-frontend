@@ -17,11 +17,9 @@
 <nav class="navbar navbar-expand-md ">
         <div class="container-fluid">
         <!-- icono o nombre -->
-
-        <a class="navbar-brand" href="#">
-          <i class="bi bi-flower1"></i>
-          <span class="text-warning">SoftAX</span>
-        </a>
+      <div style="margin-top: 25px;">
+        <a routerLink="inicio"><img mat-card-image src="../../assets/imagenes/logo1ppal.png" class="logoPrincipal"  alt="Logo principal"></a>
+      </div>
             
         <!-- boton del menu -->
 
@@ -32,7 +30,7 @@
           <!-- elementos del menu colapsable -->
 
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav me-auto d-flex">
             <li class="nav-item">
               <a class="nav-link" routerLink="contacto" routerLinkActive="active" href="#" style="font-size: 30px; ">Contacta con nosotros</a>
             </li>

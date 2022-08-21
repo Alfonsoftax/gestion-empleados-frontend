@@ -17,29 +17,10 @@ export class ContactoService {
   constructor(private httpClient: HttpClient,
     private generalService: GeneralService) {  }
 
-  obtenerListaDeContactos(): Observable<Contacto[]>{
-    return this.httpClient.get<Contacto[]>(`${this.baseUrl}`);
-  }
-
   //Este método registra un empleado
   registrarContacto(contacto:Contacto): Observable<Object>{
     const headers = this.generalService.getHeaders()
-    return this.httpClient.post(`${this.baseUrl}`,contacto, {headers});
+    return this.httpClient.post(`${this.baseUrlPro}`,contacto, {headers});
   }
-
-    //este metodo sirve para obtener o buscar un empleado
-    obtenerContactoPorId(id:number):Observable<Contacto>{
-      return this.httpClient.get<Contacto>(`${this.baseUrl}/${id}`);
-    }
-
-    //este metodo sirve para actualizar el empleado
-    actualizarContacto(id:number,contacto:Contacto) : Observable<Object>{
-      return this.httpClient.put(`${this.baseUrl}/${id}`,contacto);
-    }
-
-        //este metodo sirve para eliminar el empleado
-    eliminarContacto(id:number) : Observable<Object>{
-      return this.httpClient.delete(`${this.baseUrl}/${id}`);
-    }
 
 }

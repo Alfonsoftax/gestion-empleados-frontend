@@ -17,3 +17,14 @@ button {
     margin-top: 50px;
     width: 50%;
 }
+
+@media (max-width: 768px) {
+    input, select,textArea {
+        width: 70%;
+        margin-left:auto ;
+        margin-right:auto ;
+    }
+    .mq {
+        text-align: center;
+    }
+}

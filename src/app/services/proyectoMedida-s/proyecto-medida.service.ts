@@ -17,28 +17,9 @@ private baseUrlPro ="https://softax-app.herokuapp.com/api/v1/proyecto-medida";
   constructor(private httpClient: HttpClient,
     private generalService: GeneralService) {  }
 
-  obtenerListaDeContactos(): Observable<ProyectoMedida[]>{
-    return this.httpClient.get<ProyectoMedida[]>(`${this.baseUrl}`);
-  }
-
   //Este método registra un proyecto medida
   registrarProyectoMedida(proyectoMedida:ProyectoMedida): Observable<Object>{
     const headers = this.generalService.getHeaders()
-    return this.httpClient.post(`${this.baseUrl}`,proyectoMedida, {headers});
+    return this.httpClient.post(`${this.baseUrlPro}`,proyectoMedida, {headers});
   }
-
-    //este metodo sirve para obtener o buscar un proyecto medida
-    obtenerContactoPorId(id:number):Observable<ProyectoMedida>{
-      return this.httpClient.get<ProyectoMedida>(`${this.baseUrl}/${id}`);
-    }
-
-    //este metodo sirve para actualizar el proyecto medida
-    actualizarContacto(id:number,proyectoMedida:ProyectoMedida) : Observable<Object>{
-      return this.httpClient.put(`${this.baseUrl}/${id}`,proyectoMedida);
-    }
-
-        //este metodo sirve para eliminar el proyecto medida
-    eliminarContacto(id:number) : Observable<Object>{
-      return this.httpClient.delete(`${this.baseUrl}/${id}`);
-    }
 }

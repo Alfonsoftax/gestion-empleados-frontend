@@ -16,8 +16,11 @@
   }
   
   .logoPrincipal{
-    padding: 5px;
-    width: 120px;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
-
+.alinear {
+  text-align: end;
+}

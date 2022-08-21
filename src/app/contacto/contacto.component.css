@@ -19,13 +19,7 @@ button {
 }
 
 @media (max-width: 768px) {
-    input {
-        width: 70%;
-        margin-left:auto ;
-        margin-right:auto ;
-    }
-
-    textArea {
+    input, textArea {
         width: 70%;
         margin-left:auto ;
         margin-right:auto ;

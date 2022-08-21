@@ -9,7 +9,7 @@
     <form (ngSubmit)= "onSubmit()" #trabajarJuntosForm = "ngForm">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <label> <b>Nombre :</b>  </label>
+          <div class="mq"><label> <b>Nombre :</b>  </label></div>
           <input type = "text"
           class="form-control"
           id = "nombre"
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <label> <b>Email :</b>  </label>
+          <div class="mq"><label> <b>Email :</b>  </label></div>
         <input type = "email"
         class="form-control"
         id = "email"
@@ -56,7 +56,7 @@
       <br>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <label> <b>Tipo de proyecto :</b>  </label>
+          <div class="mq"><label> <b>Tipo de proyecto :</b>  </label></div>
           <select class="form-select form-select-lg mb-3"
           #tipoProyecto = "ngModel" name="tipoProyecto" required [(ngModel)] = "trabajoJunto.tipoProyecto"
           aria-label=".form-select-lg example">
@@ -68,7 +68,7 @@
           </select>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-        <label> <b>Presupuesto:</b>  </label>
+        <div class="mq"><label> <b>Presupuesto:</b>  </label></div>
             <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
             #presupuesto = "ngModel" name="presupuesto" required [(ngModel)] = "trabajoJunto.presupuesto">
                 <option selected>Selecciona el presupuesto</option>
@@ -81,7 +81,7 @@
     </div>
       <div class="row">
         <div class="col">
-          <label> <b>Explícanos brevemente el proyecto</b> </label>
+          <div class="mq"><label> <b>Explícanos brevemente el proyecto</b> </label></div>
           <textarea type = "text"
           class="form-control text-area"
           id = "mensaje"

@@ -17,27 +17,10 @@ private baseUrlPro ="https://softax-app.herokuapp.com/api/v1/trabajar-juntos";
   constructor(private httpClient: HttpClient,
     private generalService: GeneralService) {  }
 
-  obtenerListaDeTrabajoJunto(): Observable<TrabajarJuntos[]>{
-    return this.httpClient.get<TrabajarJuntos[]>(`${this.baseUrl}`);
-  }
-
   //Este método registra un trabajo junto
   registrarTrabajoJunto(trabajoJunto:TrabajarJuntos): Observable<Object>{  
     const headers = this.generalService.getHeaders()
-    return this.httpClient.post(`${this.baseUrl}`,trabajoJunto, {headers});
+    return this.httpClient.post(`${this.baseUrlPro}`,trabajoJunto, {headers});
   }
 
-    //este metodo sirve para obtener o buscar un trabajo junto
-    obtenerTrabajoJuntoPorId(id:number):Observable<TrabajarJuntos>{
-      return this.httpClient.get<TrabajarJuntos>(`${this.baseUrl}/${id}`);
-    }
-
-    //este metodo sirve para actualizar el trabajo junto
-    actualizarTrabajoJunto(id:number, proyectoMedida:TrabajarJuntos) : Observable<Object>{
-      return this.httpClient.put(`${this.baseUrl}/${id}`,proyectoMedida);
-    }
-
-        //este metodo sirve para eliminar el trabajo junto
-    eliminarTrabajoJuntos(id:number) : Observable<Object>{
-      return this.httpClient.delete(`${this.baseUrl}/${id}`);
-    }}
+  }
