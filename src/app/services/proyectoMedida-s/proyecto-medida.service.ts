@@ -11,7 +11,7 @@ export class ProyectoMedidaService {
 
 //URL que obtiene el listado de los empleados desde el backend
 private baseUrl ="http://localhost:8080/api/v1/proyecto-medida";
-private baseUrlPro ="https://softax-app.herokuapp.com/api/v1/proyecto-medida";
+private baseUrlPro ="http://softax-app.herokuapp.com/api/v1/proyecto-medida";
 
 
   constructor(private httpClient: HttpClient,
